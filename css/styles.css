@@ -8,6 +8,7 @@
   --secondary-bg-color: #f5f4fa;
   --card-set-gap: 30px;
   --border-color: #eeeeee;
+  --footer-color: #2f303a;
 }
 
 body {
@@ -34,6 +35,7 @@ img {
 }
 
 .container {
+  display: flex;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -49,6 +51,7 @@ img {
 }
 
 .logo {
+  align-self: center;
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -157,8 +160,6 @@ span.accent {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
-  background-color: var(--primary-text-color);
 }
 
 .hero .button {
@@ -177,6 +178,25 @@ span.accent {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+/* overlay */
+.overlay {
+  padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imges/new_photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--footer-color);
 }
 
 /* section*/
@@ -198,11 +218,6 @@ span.accent {
 }
 
 /* peculiarities */
-
-.peculiarities {
-  padding-top: 0;
-  padding-bottom: 94px;
-}
 
 .peculiarities-list {
   display: flex;
@@ -240,16 +255,16 @@ span.accent {
 
 /* work-list */
 
-.work {
+/* .work {
   padding-top: 0;
   padding-bottom: 94px;
-}
+} */
 
 .work-list {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
   padding-inline-start: 0;
 }
 
@@ -264,8 +279,11 @@ span.accent {
 /* team */
 
 .team {
-  padding-top: 0;
-  padding-bottom: 94px;
+  max-width: 1600px;
+  height: 648px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-bg-color);
 }
 
 .team-list {
@@ -396,9 +414,17 @@ button:focus {
 
 /* footer */
 
+.footer-overlay {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--footer-color);
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: block;
 }
 
 .footer .logo {
@@ -409,7 +435,7 @@ button:focus {
   color: var(--primary-white-color);
   font-style: normal;
 
-  background-color: rgb(66, 72, 80);
+  /* background-color: rgb(66, 72, 80); */
 }
 
 .address .link {
