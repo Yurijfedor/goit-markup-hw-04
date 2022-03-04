@@ -219,7 +219,7 @@ span.accent {
 
 /* peculiarities */
 
-.peculiarities-list {
+.peculiarities {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
@@ -227,16 +227,16 @@ span.accent {
   padding-inline-start: 0;
 }
 
-.peculiarities-list .item {
+.peculiarities .item {
   width: 270px;
   margin-right: 30px;
 }
 
-.peculiarities-list .item:nth-child(4n) {
+.peculiarities .item:nth-child(4n) {
   margin-right: 0;
 }
 
-.peculiarities-list .title {
+.peculiarities .title {
   margin-top: 0;
   margin-bottom: 10px;
 
@@ -248,9 +248,36 @@ span.accent {
   text-transform: uppercase;
 }
 
-.peculiarities-list .text {
+.peculiarities .text {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.peculiarities .item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--secondary-bg-color);
+}
+
+.icon-antena::before {
+  background-image: url(../imges/antena.png);
+}
+
+.icon-clock::before {
+  background-image: url(../imges/clock.png);
+}
+
+.icon-diagram::before {
+  background-image: url(../imges/diagram.png);
+}
+
+.icon-astronaut::before {
+  background-image: url(../imges/astronaut.png);
 }
 
 /* work-list */
@@ -280,7 +307,6 @@ span.accent {
 
 .team {
   max-width: 1600px;
-  height: 648px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary-bg-color);
@@ -296,6 +322,7 @@ span.accent {
 
 .team-list .item {
   margin-right: 30px;
+  background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -307,7 +334,7 @@ span.accent {
 
 .item-content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .team-list .title {
@@ -322,10 +349,53 @@ span.accent {
 
 .team-list .text {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding-inline-start: 0;
+}
+
+.instagram-icon {
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-image: url(../imges/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter-icon {
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-image: url(../imges/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook-icon {
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-image: url(../imges/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.linkedin-icon {
+  display: block;
+  width: 50px;
+  height: 30px;
+  background-image: url(../imges/linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* portfolio.html */
@@ -387,6 +457,13 @@ button:focus {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   background: #ffffff;
+}
+
+.card-set .item:hover,
+.card-set .item:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-heading {
