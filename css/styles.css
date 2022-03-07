@@ -9,6 +9,7 @@
   --card-set-gap: 30px;
   --border-color: #eeeeee;
   --footer-color: #2f303a;
+  --border-color: #afb1b8;
 }
 
 body {
@@ -28,6 +29,7 @@ img {
 
 .list {
   list-style: none;
+  padding-inline-start: 0;
 }
 
 .link {
@@ -120,6 +122,24 @@ span.accent {
 
 .contacts .item + .item {
   margin-left: 50px;
+}
+
+.contacts .link::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.envelope::before {
+  background-image: url(../imges/envelope.svg);
+}
+
+.smartphone::before {
+  background-image: url(../imges/smartphone.svg);
 }
 
 .contacts .link {
@@ -355,47 +375,86 @@ span.accent {
   text-align: center;
 }
 
-.social {
+.social-items {
   display: flex;
+  padding-inline-start: 0;
   justify-content: center;
   margin-bottom: 30px;
-  padding-inline-start: 0;
 }
 
-.instagram-icon {
-  display: block;
-  width: 50px;
-  height: 30px;
-  background-image: url(../imges/instagram.svg);
+.social-items .social-item::before {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
-.twitter-icon {
-  display: block;
-  width: 50px;
-  height: 30px;
-  background-image: url(../imges/twitter.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.social-items .social-item + .social-item {
+  margin-left: 10px;
 }
 
-.facebook-icon {
-  display: block;
-  width: 50px;
-  height: 30px;
-  background-image: url(../imges/facebook.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.instagram-icon::before {
+  background-image: url(../imges/instagram1.svg);
 }
 
-.linkedin-icon {
-  display: block;
-  width: 50px;
-  height: 30px;
-  background-image: url(../imges/linkedin.svg);
+.twitter-icon::before {
+  background-image: url(../imges/twitter1.svg);
+}
+
+.facebook-icon::before {
+  background-image: url(../imges/facebook1.svg);
+}
+
+.linkedin-icon::before {
+  background-image: url(../imges/linkedin1.svg);
+}
+
+.client-list {
+  display: flex;
+}
+
+.client-item + .client-item {
+  margin-left: 30px;
+}
+
+.client-item::before {
+  content: "";
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  outline: 1px solid var(--border-color);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+}
+
+.icon-client1::before {
+  background-image: url(../imges/client1.svg);
+}
+
+.icon-client2::before {
+  background-image: url(../imges/client2.svg);
+}
+
+.icon-client3::before {
+  background-image: url(../imges/client3.svg);
+}
+
+.icon-client4::before {
+  background-image: url(../imges/client4.svg);
+}
+
+.icon-client5::before {
+  background-image: url(../imges/client5.svg);
+}
+
+.icon-client6::before {
+  background-image: url(../imges/client6.svg);
 }
 
 /* portfolio.html */
@@ -501,10 +560,11 @@ button:focus {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: block;
+  display: flex;
 }
 
 .footer .logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -516,6 +576,8 @@ button:focus {
 }
 
 .address .link {
+  display: block;
+  margin-top: 9px;
   color: var(--adress-link-color);
   font-style: normal;
 }
@@ -523,4 +585,57 @@ button:focus {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
+}
+
+.footer-social {
+  padding-left: 70px;
+}
+
+.footer-social .text {
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.social-list {
+  display: flex;
+  padding-inline-start: 0;
+}
+
+.social-list .item + .item {
+  margin-left: 10px;
+}
+
+.social-list .item::before {
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.icon-instagram::before {
+  background-image: url(../imges/instagram.svg);
+}
+
+.icon-twitter::before {
+  background-image: url(../imges/twitter.svg);
+}
+
+.icon-facebook::before {
+  background-image: url(../imges/facebook.svg);
+}
+
+.icon-linkedin::before {
+  background-image: url(../imges/linkedin.svg);
 }
