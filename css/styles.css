@@ -124,32 +124,14 @@ span.accent {
   margin-left: 50px;
 }
 
-.contacts .link::before {
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.envelope::before {
-  background-image: url(../imges/envelope.svg);
-}
-
-.smartphone::before {
-  background-image: url(../imges/smartphone.svg);
-}
-
 .contacts .link {
   display: block;
-  min-width: 122px;
+  /* min-width: 122px; */
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -159,6 +141,11 @@ span.accent {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
 }
 
 /* main */
@@ -516,6 +503,7 @@ button:focus {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   background: #ffffff;
+  /* border: 1px solid var(--border-color); */
 }
 
 .card-set .item:hover,
