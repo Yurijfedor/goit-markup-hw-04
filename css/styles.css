@@ -143,9 +143,14 @@ span.accent {
   color: var(--accent-color);
 }
 
-.icon {
+.icon-contact {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+}
+
+.icon-contact:hover {
+  fill: var(--accent-color);
 }
 
 /* main */
