@@ -273,33 +273,6 @@ span.accent {
   margin-bottom: 0;
 }
 
-.peculiarities .item::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 120px;
-  margin-bottom: 30px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-bg-color);
-}
-
-.icon-antena::before {
-  background-image: url(../imges/antena.png);
-}
-
-.icon-clock::before {
-  background-image: url(../imges/clock.png);
-}
-
-.icon-diagram::before {
-  background-image: url(../imges/diagram.png);
-}
-
-.icon-astronaut::before {
-  background-image: url(../imges/astronaut.png);
-}
-
 /* work-list */
 
 /* .work {
