@@ -143,18 +143,9 @@ span.accent {
   color: var(--accent-color);
 }
 
-.icon .smartphone {
-  width: 10px;
-  height: 16px;
+.icon {
   margin-right: 10px;
-  fill: var(--primary-text-color);
-}
-
-.icon .envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }
 
 .icon:hover {
