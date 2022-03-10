@@ -350,17 +350,18 @@ span.accent {
 
 .social-item .link {
   display: block;
-  width: 44px;
+  /* width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
-  background-color: var(--primary-white-color);
+  background-color: var(--primary-white-color); */
 }
 
-.social-item .link:hover,
-.social-item .link:focus {
-  background-color: var(--accent-color);
+.social-item .link:hover .icon,
+.social-item .link:focus .icon {
+  /* background-color: var(--accent-color); */
   fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .social-items .social-item + .social-item {
@@ -368,8 +369,12 @@ span.accent {
 }
 
 .social-items .icon {
-  border-radius: 30%;
+  border-radius: 50%;
   fill: var(--social-link-color);
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  background-color: var(--primary-white-color);
 }
 
 /* client */
