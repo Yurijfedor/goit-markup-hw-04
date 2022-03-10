@@ -263,12 +263,10 @@ span.accent {
   margin-bottom: 0;
 }
 
-.antenna {
-  width: 100%;
-  height: 120px;
+.peculiarities .icon {
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
-  background-image: url(../imges/sprite.svg#icon-antenna);
+  padding: 25px 100px;
 }
 
 .antenna .icon {
