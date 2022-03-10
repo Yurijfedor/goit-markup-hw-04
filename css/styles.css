@@ -126,12 +126,10 @@ span.accent {
 
 .contacts .link {
   display: block;
-  /* min-width: 122px; */
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
-  /* font-style: normal; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -141,14 +139,15 @@ span.accent {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.icon .contact {
+.contacts .icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon:hover {
+.contacts .icon:hover {
   fill: var(--accent-color);
 }
 
@@ -269,6 +268,10 @@ span.accent {
   height: 120px;
   background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
+  background-image: url(../imges/sprite.svg#icon-antenna);
+}
+
+.antenna .icon {
 }
 
 /* work-list */
