@@ -353,12 +353,21 @@ span.accent {
 }
 
 .social-item .link {
-  color: var(--social-link-color);
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  /* color: var(--social-link-color); */
   background-color: var(--primary-white-color);
 }
 
-.social-item .link:hover,
-.social-item .link:focus {
+.social-item .link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-item .icon:hover,
+.social-item .icon:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -368,9 +377,9 @@ span.accent {
 }
 
 .social-items .icon {
-  border-radius: 50%;
-  background-color: currentColor;
-  fill: currentColor;
+  border-radius: 40%;
+  /* background-color: currentColor; */
+  fill: var(--social-link-color);
 }
 
 /* client */
