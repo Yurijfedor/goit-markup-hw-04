@@ -369,11 +369,12 @@ span.accent {
 }
 
 .social-items .icon {
-  border-radius: 50%;
-  fill: var(--social-link-color);
   width: 44px;
   height: 44px;
   padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  fill: var(--social-link-color);
   background-color: var(--primary-white-color);
 }
 
