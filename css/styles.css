@@ -10,6 +10,7 @@
   --border-color: #eeeeee;
   --footer-color: #2f303a;
   --border-color: #afb1b8;
+  --social-link-color: #afb1b8;
 }
 
 body {
@@ -148,7 +149,7 @@ span.accent {
 }
 
 .contacts .icon:hover {
-  fill: var(--accent-color);
+  /* fill: var(--accent-color); */
 }
 
 /* main */
@@ -264,12 +265,9 @@ span.accent {
 }
 
 .peculiarities .icon {
-  background-color: var(--secondary-bg-color);
   margin-bottom: 30px;
   padding: 25px 100px;
-}
-
-.antenna .icon {
+  background-color: var(--secondary-bg-color);
 }
 
 /* work-list */
@@ -354,37 +352,28 @@ span.accent {
   margin-bottom: 30px;
 }
 
-.social-items .social-item::before {
-  content: "";
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+.social-item .link {
+  color: var(--social-link-color);
   background-color: var(--primary-white-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
+}
+
+.social-item .link:hover,
+.social-item .link:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .social-items .social-item + .social-item {
   margin-left: 10px;
 }
 
-.instagram-icon::before {
-  background-image: url(../imges/instagram1.svg);
+.social-items .icon {
+  border-radius: 50%;
+  background-color: currentColor;
+  fill: currentColor;
 }
 
-.twitter-icon::before {
-  background-image: url(../imges/twitter1.svg);
-}
-
-.facebook-icon::before {
-  background-image: url(../imges/facebook1.svg);
-}
-
-.linkedin-icon::before {
-  background-image: url(../imges/linkedin1.svg);
-}
+/* client */
 
 .client-list {
   display: flex;
