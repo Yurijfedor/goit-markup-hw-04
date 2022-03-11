@@ -141,6 +141,10 @@ span.accent {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
+}
+
+.contacts .link:hover .icon,
+.contacts .link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -362,15 +366,6 @@ span.accent {
 .social-items .social-item + .social-item {
   margin-left: 10px;
 }
-
-/* .social-items .icon {
-  width: 44px;
-  height: 44px;
-  padding: 10px;
-  border-radius: 50%;
-  fill: var(--social-link-color);
-  background-color: var(--primary-white-color);
-} */
 
 .social-items .icon {
   width: 20px;
