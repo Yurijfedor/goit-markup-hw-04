@@ -559,20 +559,21 @@ button:focus {
   color: #ffffff;
 }
 
-.social-items .icon-footer {
+.icon-footer {
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
 }
 
-.social-items .link-footer {
+.link-footer {
   display: block;
   width: 44px;
   height: 44px;
+  padding: 12px;
   border-radius: 50%;
   background-color: var(--adress-link-color);
 }
 
-.social-items .link-footer:hover {
+.link-footer:hover {
   background-color: var(--accent-color);
 }
