@@ -393,41 +393,6 @@ span.accent {
   margin-left: 30px;
 }
 
-.client-item::before {
-  content: "";
-  display: inline-block;
-  width: 170px;
-  height: 92px;
-  outline: 1px solid var(--border-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.icon-client1::before {
-  background-image: url(../imges/client1.svg);
-}
-
-.icon-client2::before {
-  background-image: url(../imges/client2.svg);
-}
-
-.icon-client3::before {
-  background-image: url(../imges/client3.svg);
-}
-
-.icon-client4::before {
-  background-image: url(../imges/client4.svg);
-}
-
-.icon-client5::before {
-  background-image: url(../imges/client5.svg);
-}
-
-.icon-client6::before {
-  background-image: url(../imges/client6.svg);
-}
-
 /* portfolio.html */
 /* section */
 /* filter */
