@@ -359,12 +359,27 @@ span.accent {
   margin-left: 10px;
 }
 
-.social-items .icon {
+/* .social-items .icon {
   width: 44px;
   height: 44px;
   padding: 10px;
   border-radius: 50%;
   fill: var(--social-link-color);
+  background-color: var(--primary-white-color);
+} */
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-link-color);
+}
+
+.link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
   background-color: var(--primary-white-color);
 }
 
