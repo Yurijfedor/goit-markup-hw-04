@@ -397,6 +397,30 @@ span.accent {
   margin-left: 30px;
 }
 
+.client-list .link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-link-color);
+  padding: 16px 32px;
+}
+
+.client-list .icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--social-link-color);
+}
+
+.client-list .link:hover,
+.client-list .link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.client-list .link:hover .icon,
+.client-list .link:focus .icon {
+  fill: var(--accent-color);
+}
+
 /* portfolio.html */
 /* section */
 /* filter */
