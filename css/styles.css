@@ -352,6 +352,10 @@ span.accent {
 .social-item .link:hover .icon,
 .social-item .link:focus .icon {
   fill: var(--primary-white-color);
+}
+
+.social-item .link:hover,
+.social-item .link:focus {
   background-color: var(--accent-color);
 }
 
@@ -368,13 +372,13 @@ span.accent {
   background-color: var(--primary-white-color);
 } */
 
-.icon {
+.social-items .icon {
   width: 20px;
   height: 20px;
   fill: var(--social-link-color);
 }
 
-.link {
+.social-items .link {
   display: block;
   width: 44px;
   height: 44px;
