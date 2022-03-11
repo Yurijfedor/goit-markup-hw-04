@@ -559,7 +559,7 @@ button:focus {
   color: #ffffff;
 }
 
-.social-items .icon .footer {
+.social-items .icon-footer {
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
@@ -571,4 +571,8 @@ button:focus {
   height: 44px;
   border-radius: 50%;
   background-color: var(--adress-link-color);
+}
+
+.social-items .link-footer:hover {
+  background-color: var(--accent-color);
 }
