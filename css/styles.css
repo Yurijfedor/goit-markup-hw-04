@@ -4,7 +4,8 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --logo-color: #000000;
-  --adress-link-color: rgba(255, 255, 255, 0.1);
+  --adress-link-color: rgba(255, 255, 255, 0.6);
+  --footer-link-color: rgba(255, 255, 255, 0.1);
   --secondary-bg-color: #f5f4fa;
   --card-set-gap: 30px;
   --border-color: #eeeeee;
@@ -571,7 +572,7 @@ button:focus {
   height: 44px;
   padding: 12px;
   border-radius: 50%;
-  background-color: var(--adress-link-color);
+  background-color: var(--footer-link-color);
 }
 
 .link-footer:hover {
