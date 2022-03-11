@@ -142,7 +142,6 @@ span.accent {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .contacts .link:hover .icon,
