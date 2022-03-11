@@ -575,6 +575,7 @@ button:focus {
   background-color: var(--footer-link-color);
 }
 
-.link-footer:hover {
+.link-footer:hover,
+.link-footer:focus {
   background-color: var(--accent-color);
 }
