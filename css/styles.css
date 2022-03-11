@@ -119,7 +119,6 @@ span.accent {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
-  /* justify-content: flex-end; */
 }
 
 .contacts .item + .item {
@@ -127,7 +126,7 @@ span.accent {
 }
 
 .contacts .link {
-  display: block;
+  display: flex;
   min-height: 16px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -150,10 +149,10 @@ span.accent {
 }
 
 .contacts .icon {
-  margin-right: 10px;
-  fill: currentColor;
   width: 16px;
   height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* main */
@@ -478,7 +477,6 @@ button:focus {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   background: #ffffff;
-  /* border: 1px solid var(--border-color); */
 }
 
 .card-set .item:hover,
@@ -534,8 +532,6 @@ button:focus {
 .address {
   color: var(--primary-white-color);
   font-style: normal;
-
-  /* background-color: rgb(66, 72, 80); */
 }
 
 .address .link {
