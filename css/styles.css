@@ -171,6 +171,8 @@ span.accent {
 }
 
 .contacts .icon {
+  display: block;
+  justify-content: center;
   margin-right: 10px;
   fill: currentColor;
 }
