@@ -382,7 +382,7 @@ span.accent {
 }
 
 .social-items .icon {
-  fill: var(--social-link-color);
+  fill: var(--social-icon-color);
 }
 
 /* client */
