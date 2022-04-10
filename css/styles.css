@@ -400,7 +400,7 @@ span.accent {
   display: block;
   width: 170px;
   height: 92px;
-  border: 1px solid var(--social-link-color);
+  border: 1px solid var(--social-icon-color);
   padding: 16px 32px;
   fill: var(--social-icon-color);
 }
