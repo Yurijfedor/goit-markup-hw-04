@@ -371,10 +371,6 @@ span.accent {
   margin-left: 10px;
 }
 
-.social-item .icon {
-  fill: var(--social-link-color);
-}
-
 .social-items .link {
   display: block;
   width: 44px;
@@ -382,6 +378,7 @@ span.accent {
   padding: 12px;
   border-radius: 50%;
   background-color: var(--primary-white-color);
+  fill: var(--social-link-color);
 }
 
 /* client */
