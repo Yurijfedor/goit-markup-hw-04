@@ -397,9 +397,6 @@ span.accent {
   height: 92px;
   border: 1px solid var(--social-link-color);
   padding: 16px 32px;
-}
-
-.icon-client {
   fill: var(--social-link-color);
 }
 
