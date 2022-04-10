@@ -9,6 +9,7 @@
   --card-set-gap: 30px;
   --border-color: #eeeeee;
   --social-icon-color: #afb1b8;
+  --footer-link-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
