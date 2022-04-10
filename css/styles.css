@@ -165,6 +165,16 @@ span.accent {
   color: var(--accent-color);
 }
 
+.contacts .link:hover .icon,
+.contacts .link:focus .icon {
+  fill: var(--accent-color);
+}
+
+.contacts .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /*------------------------------MAIN----------------------------------------- */
 /* index.html */
 /* hero */
@@ -262,7 +272,7 @@ span.accent {
   text-transform: uppercase;
 }
 
-.advantage .icon {
+.advantage-list .icon {
   margin-bottom: 30px;
   padding: 25px 100px;
   background-color: var(--secondary-bg-color);
@@ -352,7 +362,7 @@ span.accent {
   margin-left: 10px;
 }
 
-.social-items .icon {
+.social-items .link .icon {
   fill: var(--social-link-color);
 }
 
