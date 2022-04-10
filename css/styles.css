@@ -157,7 +157,16 @@ span.accent {
 }
 
 .contacts .link {
+  display: flex;
+  min-height: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts .link:hover,
@@ -171,8 +180,6 @@ span.accent {
 }
 
 .contacts .icon {
-  display: block;
-  justify-content: center;
   margin-right: 10px;
   fill: currentColor;
 }
