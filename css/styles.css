@@ -506,12 +506,9 @@ button:focus {
   background-color: #2f303a;
 }
 
-.footer .wrapper {
+.wrapper {
   display: flex;
-}
-
-.footer-list {
-  margin-top: 20px;
+  align-items: baseline;
 }
 
 .footer-list .item {
@@ -527,6 +524,7 @@ button:focus {
 }
 
 .footer-address {
+  margin-top: 20px;
   color: var(--primary-white-color);
   font-style: normal;
 }
@@ -543,7 +541,6 @@ button:focus {
 
 .footer-social {
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .footer-social .text {
