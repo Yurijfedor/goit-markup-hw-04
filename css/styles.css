@@ -192,7 +192,21 @@ span.accent {
 
 .hero {
   text-align: center;
-  background-color: #2f303a;
+  padding-top: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../imges/new_photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--footer-color);
 }
 
 .hero-title {
@@ -222,24 +236,6 @@ span.accent {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
-
-.overlay {
-  padding-top: 200px;
-  max-width: 1600px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../imges/new_photo.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: var(--footer-color);
 }
 
 /* advantage */
@@ -283,10 +279,12 @@ span.accent {
   text-transform: uppercase;
 }
 
-.advantage-list .icon {
-  margin-bottom: 30px;
+.advantage-icon {
+  width: 270px;
+  height: 120px;
   padding: 25px 100px;
   background-color: var(--secondary-bg-color);
+  margin-bottom: 30px;
 }
 
 /* work-list */
