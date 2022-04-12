@@ -397,11 +397,12 @@ span.accent {
 }
 
 .link-client {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--social-icon-color);
-  padding: 16px 32px;
   fill: var(--social-icon-color);
 }
 
